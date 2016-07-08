@@ -1,8 +1,12 @@
 #runtime
 
-//1.[objc msg];  实际上是通过左边代码实现消息转发   ((void (*)(id,SEL))objc_msgSend)((id)objc,@selector(msg));
-
-
+//1.[objc msg];  实际上是通过左边代码实现消息转发 
+```objective-c
+((void (*)(id,SEL))objc_msgSend)((id)objc,@selector(msg));
+```
+</br>
+</br>
+</br>
 
 //2.如果有实现下面的方法，会先进入下面的方法。
 ```objective-c
@@ -11,7 +15,9 @@
 NSLog(@"%@ msg", self);
 }
 ```
-
+</br>
+</br>
+</br>
 
 
 //如果无，可以通过下面的方法接收到分发的sel(method)
@@ -50,8 +56,9 @@ return otherObj;
 return nil;
 }
 ```
-
-
+</br>
+</br>
+</br>
 
 //4.methodSignatureForSelector再一次检测msg这个函数，然后返回NSMethodSignature，返回的NSMethodSignature会触发forwardInvocation的方法。如果methodSignatureForSelector返回nil或没有实现forwardInvocation都会跳到doesNotRecognizeSelector返回不能执行msg函数
 //下面三行代码系NSMethodSignature与NSInvocation的关系
