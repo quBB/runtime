@@ -1,0 +1,33 @@
+{
+  "name": "ACNetworkframework",
+  "version": "1.0.1",
+  "summary": "This Networkframework is easy to use, you just add 2 files that network function is work for all page",
+  "platforms": {
+    "ios": "7.0"
+  },
+  "description": "a network framework",
+  "homepage": "https://github.com/AllanChen/ACNetworkframework",
+  "frameworks": [
+    "QuartzCore",
+    "UIKit"
+  ],
+  "license": "MIT (example)",
+  "authors": {
+    "Allan": "cyjian0@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/AllanChen/ACNetworkframework.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "NetworkHelper",
+    "NetworkHelper/**/*.{h,m}",
+    "Helper",
+    "Helper/**/*.{h,m}"
+  ],
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.6.0"
+    ]
+  }
+}
