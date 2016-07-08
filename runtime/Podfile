@@ -1,0 +1,13 @@
+platform :ios, '7.0'
+pod 'ACNetworkframework', :git => 'https://github.com/AllanChen/ACNetworkframework'
+pod 'SDWebImage', '~> 3.7.1'
+pod 'Mantle', '~> 2.0.0'
+pod 'FMDB'
+pod 'Masonry'
+pod 'UMengAnalytics'
+pod 'pop', '~> 1.0.7'
+pod 'YLGIFImage'
+pod 'MBProgressHUD', '~> 0.9.1'
+pod 'GPUImage', '~> 0.1.7'
+pod 'AFNetworking', '~> 2.6.3’
+pod 'MJExtension', '~> 3.0.8'
