@@ -56,9 +56,12 @@ void msg(id self, SEL cmd) {
 
 //4.methodSignatureForSelector再一次检测msg这个函数，然后返回NSMethodSignature，返回的NSMethodSignature会触发forwardInvocation的方法。如果methodSignatureForSelector返回nil或没有实现forwardInvocation都会跳到doesNotRecognizeSelector返回不能执行msg函数
 //下面三行代码系NSMethodSignature与NSInvocation的关系
+```objective-c
 //NSMethodSignature *signature = nil;
 //signature = [self methodSignatureForSelector:getSel];
 //NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:signature];
+```
+
 ```objective-c
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {
 		if ([NSStringFromSelector(aSelector) isEqualToString:@"msg"]) {
